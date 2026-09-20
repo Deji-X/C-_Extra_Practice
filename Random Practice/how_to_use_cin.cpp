@@ -8,8 +8,9 @@ int main(){
 
   
   cout << "Enter your age" << endl;
-  cout << "Enter your name" << endl;
   cin >> age;
+
+  cout << "Enter your name" << endl;
   cin.ignore();
   getline(cin, name);
 

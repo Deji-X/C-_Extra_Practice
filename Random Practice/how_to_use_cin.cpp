@@ -11,7 +11,7 @@ int main(){
   cin >> age;
 
   cout << "Enter your name" << endl;
-  cin.ignore();
+  cin.ignore(); //always used to after a 'cin' because it deletes the new line \n automatically added.
   getline(cin, name);
 
   cout << "Hello World" << endl;

@@ -22,6 +22,25 @@ return type alone is not sufficient for overloading.
 #include <string>
 using namespace std;
 
+
+int sigma(int n) {
+    // Write your code below
+    int sum = 0;
+    for(int i = 1; i <= n; i++) {
+        sum += i;
+    }
+    return sum;
+
+}
+
+int main() {
+    int n;
+    cin >> n;
+    int res = sigma(n);
+    cout << res;
+    return 0;
+}
+
 int main(){
     retrun 0;
 }

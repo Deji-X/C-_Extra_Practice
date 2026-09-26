@@ -1,22 +1,24 @@
 #include <iostream>
 #include <string>
-
 using namespace std;
-/*
-Write a function named is_valid that gets two string arguments, username and password.
 
-The function will return true if the username and
-password are valid in the system, otherwise false.
+bool is_valid (string username, string password){
+  if(username == "admin"){
+    return true;
+  }
+  if (username == "user" && password == "qwerty"){
+    return true;
+  }
+  return false;
+  
+}
 
-Our system contains only two valid usernames - "admin" and "user".
-
-The valid password for username "user" is "qwerty".
-
-For username "admin" any password is valid!
-*/
 int main(
+  string user, pass;
+  cin >> user >> pass;
+  bool res = is_valid(user, pass);
+  cout << (res ? "true" : "false");
 
 
-
-return 0;
+  return 0;
 );

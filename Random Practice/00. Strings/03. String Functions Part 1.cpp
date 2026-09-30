@@ -46,10 +46,25 @@ Replace: [After replacing]
 using namespace std;
 
 void stringOperations(string str){
-  // 1. Print length of the string
-  cout << str.length() << endl;
+  // 1. Print length of the string.
+  cout << "Length: " << str.length() << endl;
+
+  // 2. Append " - Modified" to the string.
+  cout << "Append: " << str.append(" - Modified") << endl;
+
+  // 3. Insert "C++ " at the beginning
+  cout << "Insert: " << str.insert(0, "C++ ") << endl;
+
+  // 4. Extract substring of length 5 starting at position 5
+  cout << "Extract: " << str.substr(5, 5) << endl;
+
+  // 5. Replace substring at position 5 with "Awesome"
+  cout << "Replace: " << str.replace(5, 5, "Awesome") << endl;
 }
 
 int main(){
-  
+  string str;
+  getline(cin, str);
+  stringOperation(str);
+  return 0;
 }

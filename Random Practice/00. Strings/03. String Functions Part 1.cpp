@@ -40,3 +40,16 @@ Insert: [After Insert]
 Extract: [The extracted string]
 Replace: [After replacing]
 */ 
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+void stringOperations(string str){
+  // 1. Print length of the string
+  cout << str.length() << endl;
+}
+
+int main(){
+  
+}

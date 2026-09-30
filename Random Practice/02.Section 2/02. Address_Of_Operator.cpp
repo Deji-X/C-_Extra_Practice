@@ -13,7 +13,7 @@ The pointer contains the address, not the actual value of the variable.
 Create A Program that demonstrates the address-of operator by working with an integer
 variable and a pointer. Declare an integer variable named 'score' and initialize it with
 the value '85'.
-Create a pointer nmed scorePtr that stores the memory address of the 'score' variable
+Create a pointer named scorePtr that stores the memory address of the 'score' variable
 using the address-of operator. 
 Print the memory address stored in the pointer using the following format:
 Address: 0x...
@@ -31,5 +31,10 @@ standard hexadecimal representation of a memory address in C++
 using namespace std;
 
 int main(){
+
+  int score = 85;
+  int* scorePtr = &score;
+
+  cout << "Address: " << scorePtr << endl;
   return 0;
 }

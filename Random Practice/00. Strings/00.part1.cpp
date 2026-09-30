@@ -30,11 +30,11 @@ void printStringInfo (char str[]){
   str[0] = 'X';
   
   // Print the modified string
-  cout << "Modified string: " << endl;
+  cout << "Modified string: " << str << endl;
 }
 
 int main(){
-  char message [] = "Hello, World!";
+  char message[] = "Hello, World!";
 
   printStringinfo(message);
   

@@ -60,3 +60,22 @@ mem[2][3:0] = mem[1][7:4];
 
 // THEREFORE
 mem[2] = 8'b00110110;
+
+
+//6. Mulriple Dimensions + Selective Assignment
+
+reg [7:0] mem[0:3];
+
+mem[0] = 8'b10101101;
+mem[1] = 8'b11000110;
+
+mem[2][7:5] = mem[0][2:0];
+//mem[2][7:5] = 3'b101;
+
+mem[2][4:2] = mem[1][6:4];
+//mem[2][4:2] = 3'b100;
+
+mem[2][1:0] = 2'b11;
+
+//Therefore:
+mem[2] = 8'b10110011;

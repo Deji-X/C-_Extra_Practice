@@ -23,11 +23,15 @@ localparam STATE_IDLE = 2'b00;
 localparam STATE_RUN  = 2'b01;
 Use localparam for internal constants that must not be changed from outside the module.
 */
-/*
-Add a parameter called WIDTH with a default value of 4.
-What to do:
 
-Add a parameter named WIDTH
-Set its default value to 4
-The parameter goes inside #( ) after the module name
-*/
+module counter #(
+  // Add parameter WIDTH here with default 4
+  parameter WIDTH = 4
+  
+)(
+  input clk,
+  input reset,
+  output reg [WIDTH-1:0] count
+);
+
+endmodule

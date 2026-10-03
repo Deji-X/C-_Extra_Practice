@@ -49,3 +49,18 @@ for (int i = 0; i < 3; i++){
   
 }
 //ANSWER = 10 20 30.
+
+
+//QUIZ 5
+int values[5] = {10, 20, 30, 40, 50};
+
+int* ptr = values;
+
+ptr += 2; //Increments from 10 to 30.
+// values[0] -> values[2] 
+
+for (int i = 0; i < 2; i++){
+         cout << *ptr << " "; // Reads 30. 
+         ptr++; // Moves from 30 to 40, and reads it.
+// OUTPUT = 30 40. 
+}

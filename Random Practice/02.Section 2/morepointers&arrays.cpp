@@ -64,3 +64,16 @@ for (int i = 0; i < 2; i++){
          ptr++; // Moves from 30 to 40, and reads it.
 // OUTPUT = 30 40. 
 }
+
+//QUIZ 6 
+int values[5] = {10, 20, 30, 40, 50};
+
+int* ptr = values;
+
+for (int i = 0; i < 3; i++){
+         prt++; //10 to 20
+         cout << *ptr << " "; //print 20, 30, 40.
+         
+}
+
+//QUIZ 7

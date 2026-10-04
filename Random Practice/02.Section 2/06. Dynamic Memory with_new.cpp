@@ -19,6 +19,12 @@ int main(){
   int value;
   cin >> value;
 
+  int* numPtr = new int;
+  *numPtr = value;
+
+  cout << "Value: " << *numPtr << endl;
+  cout << "Address: " << numPtr << endl;
+
   
   return 0;
 }

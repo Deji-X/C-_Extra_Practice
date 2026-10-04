@@ -23,7 +23,35 @@ int main(){
   cin >> firstValue;
   cin >> secondValue;
 
+  // TODO: Write your code below
+    // 1. Allocate memory using new and store in dynamicPtr
+    // 2. Assign firstValue to the allocated memory
+    // 3. Print initial value
+    // 4. Update with secondValue
+    // 5. Print updated value
+    // 6. Delete the memory and set pointer to nullptr
+    // 7. Print confirmation message
+  
   int* dynamicPtr = new int;
+  *dynamicPtr = firstValue;
+
+  cout << "Initial value: " << *dynamicPtr << endl;
+
+  *dynamicPtr = secondValue;
+
+  cout << "Updated value: " << *dynamicPtr << endl;
+
+  delete dynamicPtr;
+
+  dynamicPtr = nullptr;
+
+  if (dynamicPtr == nullptr){
+    cout << "Memory freed successfully" << endl;
+  } else {
+    cout << *dynamicPtr << endl;
+  }
   
   return 0;
 }
+
+

@@ -13,3 +13,17 @@ memory:
 delete ptr;
 ptr = nullptr;
 */
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main(){
+  int firstValue, secondValue;
+  cin >> firstValue;
+  cin >> secondValue;
+
+  int* dynamicPtr = new int;
+  
+  return 0;
+}

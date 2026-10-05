@@ -18,3 +18,4 @@ allows you to know the position of each element.
 #include <vector>
 #include <string>
 
+using namespace std;

@@ -15,3 +15,4 @@ allows you to know the position of each element.
 
 */
 #include <iostream>
+#include <vector>

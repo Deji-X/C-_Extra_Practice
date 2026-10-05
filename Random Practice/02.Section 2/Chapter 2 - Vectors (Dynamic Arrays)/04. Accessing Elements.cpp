@@ -19,6 +19,7 @@ To access the last element, use data.size() - 1 as the index.
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -47,9 +48,9 @@ int main(){
 
   // Output the results
   cout << "Element at index " << index1 << ": " << value1 << endl;
-  cout << "Element at index " << index1 << ": " << value1 << endl;
-  cout << "First element: " << data.at() << endl;
-  cout << "Last element " << data.at() - 1 << endl;
+  cout << "Element at index " << index2 << ": " << value2 << endl;
+  cout << "First element: " << data.at(0) << endl; //data[0]
+  cout << "Last element: " << data.at(data.size() - 1) << endl;
 
   return 0;
 }

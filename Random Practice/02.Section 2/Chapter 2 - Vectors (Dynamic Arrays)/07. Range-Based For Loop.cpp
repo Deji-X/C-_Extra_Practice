@@ -34,9 +34,15 @@ int main(){
         cities.push_back(city);
     }
 
-    // TODO: Write yout code below
+    // TODO: Write your code below
     // Use a range-based for loop to iterate through the cities vector
+    for (const string& city : cities) {
+        cout << "City: " << city << " (Length: " << city.size() << ")" << endl;
+    }
+    
     // Print each city with its length using the specified format
+    cout << "Total cities processed: " << cities.size() << endl;
+    
     // After the loop, print the total number of cities processed
 
     return 0;

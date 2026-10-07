@@ -17,7 +17,7 @@ int main(){
   cout << "3. Quit" << endl;
   cout << endl;
 
-  cout << "Task list system initiakized and ready!" << endl; 
+  cout << "Task list system initialized and ready!" << endl; 
   
 
   

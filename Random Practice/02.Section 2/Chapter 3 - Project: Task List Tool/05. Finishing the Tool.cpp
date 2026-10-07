@@ -24,7 +24,7 @@ int main() {
 
     while (choice != 4) {
 
-        cout << "Choose an option: " << endl;
+        cout << "Choose an option: ";
         cin >> choice;
 
         if (choice == 1) {

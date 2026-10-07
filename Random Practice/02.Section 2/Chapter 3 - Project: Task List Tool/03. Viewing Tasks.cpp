@@ -18,17 +18,34 @@ int main(){
   cout << endl;
 
   cout << "Task list system initialized and ready!" << endl;
-  
-  string task;
-  getline(cin, task);
-  
-  tasks.push_back(task);
-  
-  cout << "Task \"" << task <<  "\" added successfully!" << endl;
 
-  cout << "Total tasks: " << tasks.size() << endl;
-  
- 
+  int n;
+  /*string task;
+  getline(cin, task);
+  tasks.push_back(task);
+  */
+  cin >> n;
+  cin.ignore();
+
+  for (int i = 0; i < n; i++){
+    string task;
+    getline(cin, task);
+    tasks.push_back(task);
+  }
+
+  if (tasks.empty()){
+      cout << "No tasks available." << endl;
+  }
+  else {
+    cout << "Your Tasks:" << endl;
+
+    for (int i = 0; i < tasks.size(); i++){
+      cout << i + 1 << ". " << tasks[i] << endl;
+    }
+
+    cout << "Total tasks: " << tasks.size() << endl;
+  }
+   
   
   return 0;
 }

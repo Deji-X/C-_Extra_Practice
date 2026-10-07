@@ -33,19 +33,33 @@ int main(){
     tasks.push_back(task);
   }
 
-  if (tasks.empty()){
-      cout << "No tasks available." << endl;
+  int taskNumber;
+  cin >> taskNumber;
+
+  if (taskNumber <= 0 || taskNumber > tasks.size()){
+    cout << "Error: Invalid task number. Please enter a number between 1 and " << tasks.size() << "." << endl;
   }
   else {
-    cout << "Your Tasks:" << endl;
+    int index = taskNumber - 1;
+    string removedTask = tasks[index];
+
+    tasks.erase(tasks.begin() + index);
+
+      cout << "Task \"" << removedTask << "\" removed successfully!" << endl;
+      
+      if (tasks.empty()){
+      cout << "No tasks remaining." << endl;
+  }
+  else {
+    cout << "Remaining Tasks:" << endl;
 
     for (int i = 0; i < tasks.size(); i++){
       cout << i + 1 << ". " << tasks[i] << endl;
     }
 
-    cout << "Total tasks: " << tasks.size() << endl;
-  }
-   
+   }
+     cout << "Total tasks: " << tasks.size() << endl;
+  } 
   
   return 0;
 }

@@ -22,33 +22,33 @@ for (const auto& pair : studentScores){
 #include <iostream>
 #include <map>
 #include <string>
-#include <vector>
 using namespace std;
 
-int main(){
+int main() {
     // Read the number of students
     int n;
     cin >> n;
-
+    
     // Create the map to store grades
     map<string, int> grades;
-
-    //Read each student's name and score, then add to the map
-    for (){
-        
+    
+    // Read each student's name and score, then add to the map
+    for (int i = 0; i < n; i++) {
+        string name;
+        int score;
+        cin >> name >> score;
+        grades[name] = score;
     }
-
-
+    
     // Print the results
-    cout << "Student Grades: " << endl;
-
-    // Use a range-based for loop to print each student's grade.
-    for (const auto& pair : grades){
+    cout << "Student Grades:" << endl;
+    // Use a range-based for loop to print each student's grade
+    for (const auto& pair : grades) {
         cout << pair.first << ": " << pair.second << endl;
     }
-
-    // Print total number of students.
-    cout << "Total stidents: " << grades.size() << endl;
-
+    
+    // Print total number of students
+    cout << "Total students: " << grades.size() << endl;
+    
     return 0;
 }

@@ -39,6 +39,9 @@ int main(){
     cout << "Student Grades: " << endl;
 
     // Use a range-based for loop to print each student's grade.
+    for (const auto& pair : grades){
+        
+    }
 
     // Print total number of students.
     cout << "Total stidents: " << grades.size() << endl;

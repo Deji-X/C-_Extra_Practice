@@ -25,7 +25,7 @@ for (const auto& pair : studentScores){
 using namespace std;
 
 int main(){
-    // Rread the number of students
+    // Read the number of students
     int n;
     cin >> n;
 

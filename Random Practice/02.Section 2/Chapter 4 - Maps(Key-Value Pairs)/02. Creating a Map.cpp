@@ -40,7 +40,7 @@ int main(){
 
     // Use a range-based for loop to print each student's grade.
     for (const auto& pair : grades){
-        
+        cout << pair.first << ": " << pair.second << endl;
     }
 
     // Print total number of students.

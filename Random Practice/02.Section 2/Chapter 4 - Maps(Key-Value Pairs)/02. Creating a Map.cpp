@@ -22,7 +22,7 @@ for (const auto& pair : studentScores){
 #include <iostream>
 #include <map>
 #include <string>
-#include 
+#include <vector>
 using namespace std;
 
 int main(){

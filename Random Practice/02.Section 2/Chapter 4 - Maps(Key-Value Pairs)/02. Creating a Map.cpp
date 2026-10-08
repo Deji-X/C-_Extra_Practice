@@ -19,3 +19,29 @@ for (const auto& pair : studentScores){
 'auto' automatically deduces the type of each element, and 
 'const auto&' avoids unnecessart copying.
 */
+#include <iostream>
+#include <map>
+#include <string>
+using namespace std;
+
+int main(){
+    // Rread the number of students
+    int n;
+    cin >> n;
+
+    // Create the map to store grades
+    map<string, int> grades;
+
+    //Read each student's name and score, then add to the map
+
+
+    // Print the results
+    cout << "Student Grades: " << endl;
+
+    // Use a range-based for loop to print each student's grade.
+
+    // Print total number of students.
+    cout << "Total stidents: " << grades.size() << endl;
+
+    return 0;
+}

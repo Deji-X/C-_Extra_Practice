@@ -28,14 +28,14 @@ assign c = 1'bZ;    // Explicitly set wire to Z.
 module xz_challege;
   wire [3:0] a, c, d;
 
-  assign a = 4'b00X0;
-  assign c = ;
-  assign d = ;
+  assign a = 4'b00X0;      // Bit 1 is X, others 0
+  assign c = 4'bXXXX;      // All bits X
+  assign d = 4'bZZZZ;      // all bits Z
 
   initial begin
-    $display ("", );
-    $display ("", );
-    $display ("", );
+   $display ("a = %b", a);
+   $display ("c = %b", c);
+   $display ("d = %b", d);
     $finish;
   end
   

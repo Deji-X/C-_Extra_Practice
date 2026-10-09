@@ -28,7 +28,7 @@ assign c = 1'bZ;    // Explicitly set wire to Z.
 module xz_challege;
   wire [3:0] a, c, d;
 
-  assign a = ;
+  assign a = 4'b00X0;
   assign c = ;
   assign d = ;
 

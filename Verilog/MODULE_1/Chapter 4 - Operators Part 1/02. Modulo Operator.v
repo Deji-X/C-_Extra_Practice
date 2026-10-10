@@ -12,6 +12,6 @@ Common uses:
 if (number % 2 == 0) $display ("Even");
 
 // Wrao counter (0-9)
-count = (
+count = (count
 
 */

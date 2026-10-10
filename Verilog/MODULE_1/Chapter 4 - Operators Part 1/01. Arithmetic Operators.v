@@ -1,5 +1,5 @@
 /*  ARITHMETIC OPERATORS
 
-Vweilog Arithmetic Operations:
+Verilog Arithmetic Operations: +, -, *, /
 
 */

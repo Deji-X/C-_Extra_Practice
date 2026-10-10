@@ -20,4 +20,17 @@ module arithmetic_challenge;
     a = 4'd12;
     b = 4'd5;
 
+    add = a + b;
+    sub = a - b;
+    mul = a * b;
+    div = a / b;
+
+    $display("12 + 5 = %d", add);
+    $display("12 - 5 = %d", sub);
+    $display("12 * 5 = %d", mul);
+    $display("12 / 5 = %d", div);
+    $finish;
+  end
+endmodule
+
     

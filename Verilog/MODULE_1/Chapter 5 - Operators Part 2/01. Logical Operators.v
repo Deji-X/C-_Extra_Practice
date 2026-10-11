@@ -28,3 +28,5 @@ if (!reset)    // true when reset is 0
 module logical_challenge;
   reg [3:0] value1, value2;
   reg and_out, or_out, not_out;
+
+  initial begin

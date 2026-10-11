@@ -30,3 +30,7 @@ module logical_challenge;
   reg and_out, or_out, not_out;
 
   initial begin
+    value1 = 4'd12;
+    value2 = 4'd5;
+
+    and_out = value1 && value2;

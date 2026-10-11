@@ -31,3 +31,11 @@ module bitwise_challenge;
     not_res =    ~a;
 
     $display("a = %b", a);
+    $display("b = %b", b);
+    $display("a & b = %b", and_res);
+    $display("a | b = %b", or_res);
+    $display("a ^ b = %b", xor_res);
+    $display("~a    = %b", not_res);
+    $finish
+  end
+endmodule

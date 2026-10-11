@@ -17,3 +17,17 @@ a | b = 1110   // OR
 a ^ b = 0110   // XOR
 ~a    = 0101   // NOT
 */
+module bitwise_challenge;
+  reg [3:0] a, b;
+  reg [3:0] and_res, or_res, xor_res, not_res;
+
+  initial begin
+    a = 4'b1101;
+    b = 4'b1011;
+
+    and_res = a & b;
+    or_res  = a | b;
+    xor_res = a ^ b;
+    not_res =    ~a;
+
+    $display("a = %b", a);

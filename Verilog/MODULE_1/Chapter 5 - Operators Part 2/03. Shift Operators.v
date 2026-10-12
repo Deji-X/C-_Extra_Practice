@@ -37,15 +37,15 @@ module shift_challenge;
                   // rev= 1110 1111
                   // +1 = 1111 0000 this is the 2's complement.
 
-    left_result  =;
-    right_result =;
-    arith_result =;
+    left_result  = a <<  3;
+    right_result = a >>  1;
+    arith_result = b >>> 2;
 
-    $display("",);
-    $display("",);
-    $display("",);
-    $display("",);
-    $display("",);
+    $display("a = %b", a);
+    $display("a << 3 = %b", left_result);
+    $display("a >> 1 = %b", right_result);
+    $display("b = %b", b);
+    $display("b >>> 2 = %b", arith_result);
     $finish;
   end
 endmodule

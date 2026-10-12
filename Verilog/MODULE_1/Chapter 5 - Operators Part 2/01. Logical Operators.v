@@ -36,3 +36,10 @@ module logical_challenge;
     and_out = value1 && value2;
     or_out  = value1 || value2;
     not_out = !value1;
+
+    $display("%d && %d = %d", value1, value2, and_out);
+    $display("$d || %d = %d", value1, value2, or_out );
+    $display("!%d = %d", value1, not_out);
+    $finish;
+  end
+endmodule

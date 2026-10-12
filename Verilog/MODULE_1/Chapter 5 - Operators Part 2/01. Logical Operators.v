@@ -34,3 +34,4 @@ module logical_challenge;
     value2 = 4'd5;
 
     and_out = value1 && value2;
+    or_out  = value1 || value2;

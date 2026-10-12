@@ -32,4 +32,20 @@ module shift_challenge;
 
   initial begin
     a = 8'b00010001;
-    b = -8'sd16;
+    b = -8'sd16;  // A negative 8 bit signed decimal 16 number
+                  // 16 = 0001 0000
+                  // rev= 1110 1111
+                  // +1 = 1111 0000 this is the 2's complement.
+
+    left_result  =;
+    right_result =;
+    arith_result =;
+
+    $display("",);
+    $display("",);
+    $display("",);
+    $display("",);
+    $display("",);
+    $finish;
+  end
+endmodule

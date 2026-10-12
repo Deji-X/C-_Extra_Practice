@@ -35,3 +35,4 @@ module logical_challenge;
 
     and_out = value1 && value2;
     or_out  = value1 || value2;
+    not_out = !value1;

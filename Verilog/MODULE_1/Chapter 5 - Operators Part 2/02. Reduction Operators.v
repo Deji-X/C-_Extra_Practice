@@ -21,3 +21,22 @@ any_one    = |data;   // 1 if any bit is 1 (data != 0)
 odd_parity = ^data;   // 1 if odd number of 1's
 all_zeros  = ~|data;  // 1 if data == 0
 */
+module reduction_challenge;
+  reg [3:0] a, b, c;
+  reg all_ones, any_one, odd_parity;
+
+  initial begin
+    a = 4'b1111;
+    b = 4'b0100;
+    c = 4'b1011;
+
+    all_ones   = &a;
+    any_one    = |b;
+    odd_parity = ^c;
+
+    $display("&4'b1111 = %d", all_ones);
+    $display("|4'b0100 = %d", any_one);
+    $dsiplay("^4'b1011 = %d", odd_parity);
+    $finish;
+  end
+endmodule

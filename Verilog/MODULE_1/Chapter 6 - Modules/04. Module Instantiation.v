@@ -20,5 +20,24 @@ RULES:
 4. Multiple instances run in parallel, each with its own signals
 
 */
-module or_gate();
+module or_gate(
+  input in1,
+  input in2,
+  output result
+);
+  assign result = in1 | in2;
 endmodule
+
+module top(
+  input input_A,
+  input input_B,
+  output output_Y
+);
+
+  or_gate or1(
+    input_A,
+    input_B,
+    output_Y
+  );
+endmodule
+  

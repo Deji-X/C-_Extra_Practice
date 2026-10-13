@@ -20,5 +20,5 @@ RULES:
 4. Multiple instances run in parallel, each with its own signals
 
 */
-module ();
+module or_gate();
 endmodule

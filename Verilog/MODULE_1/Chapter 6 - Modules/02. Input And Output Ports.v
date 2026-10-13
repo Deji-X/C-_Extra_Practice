@@ -32,3 +32,22 @@ module example(
 endmodule
 
 */
+
+module port_challenge(
+  input [8:0] data_in,
+  input clk,
+  output reg [3:0] result,
+  output valid
+);
+
+  reg [3:0] counter;
+
+  always @(posedge clk) begin
+    counter <= counter + 1;
+    result <= counter;
+
+  end
+
+  assign valid = (counter > 8);
+  
+endmodule

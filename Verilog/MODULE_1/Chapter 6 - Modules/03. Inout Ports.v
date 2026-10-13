@@ -19,3 +19,15 @@ KEY RULES:
 2. Use assign with a ternary condition: never assign inside an always block.
 3. Release with Z when not driving to avoid bus contention.
 */
+module bidir_buffer(
+  inout [7:0] io_bus,
+  input [7:0] send_value;
+  input send_enable;
+  output [7:0] receive_value
+);
+
+  assign io_bus = send_enable ? send_value : 8'bZ;
+
+  assign receive_value = io_bus;
+
+endmodule

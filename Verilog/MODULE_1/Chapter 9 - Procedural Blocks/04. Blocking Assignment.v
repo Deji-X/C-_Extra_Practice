@@ -14,3 +14,26 @@ Execution	|  One after another	  	|  All at once
 Use for	  	|  Combinational logic		| Sequential logic (flip-flops)
 
 */
+
+module swap;
+  reg x, y;
+  reg temp;
+
+  initial begin
+    x = 1;
+    y = 0;
+
+    $display("Before swap: x=%d, y=%d", x, y);
+    
+      temp = x;
+      x = y;
+      y = temp;
+  
+      
+    
+    $display("After swap: x=%d, y=%d", x, y);
+    $finish;
+  end
+  
+endmodule
+    

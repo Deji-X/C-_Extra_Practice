@@ -25,3 +25,19 @@ module example (
 endmodule
 
 */
+
+module gates_challenge(
+  input p,
+  input q,
+  output and_result,
+  output or_result,
+  output not_result
+);
+
+  assign and_result = p & q;
+
+  assign or_result = p | q;
+
+  assign not_result = ~p;
+
+endmodule

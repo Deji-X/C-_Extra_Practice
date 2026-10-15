@@ -14,3 +14,16 @@ xor(out, a, b, c);      // 3-input XOR
 xnor(out, p, q, r, s);  // 4-input XNOR
 
 */
+
+module xor_xnor_challenge(
+  input x,
+  input y,
+  output xor_result,
+  output xnor_result
+);
+
+  assign xor_result = x ^ y;
+
+  assign xnor_result = ~(x ^ y);
+
+endmodule

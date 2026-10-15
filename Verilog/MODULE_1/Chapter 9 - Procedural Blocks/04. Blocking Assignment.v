@@ -8,9 +8,9 @@ always @(*) begin
   out = temp | c;  // Step 2 (uses updated temp)
 end
 
-	        | Blocking (=)	        | Non-blocking (<=)
+	        | Blocking (=)	        	| Non-blocking (<=)
 -----------------------------------------------------------------
-Execution	|  One after another	  |  All at once
-Use for	  |  Combinational logic	| Sequential logic (flip-flops)
+Execution	|  One after another	  	|  All at once
+Use for	  	|  Combinational logic		| Sequential logic (flip-flops)
 
 */

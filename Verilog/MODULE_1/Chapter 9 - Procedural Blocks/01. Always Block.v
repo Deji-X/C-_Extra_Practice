@@ -19,3 +19,21 @@ end
 
 Note: outputs driven by 'always' blocks must be declared as 'reg'
 */
+
+module toggler (
+  input clk,
+  output reg out1,
+  output reg out2
+);
+
+  initial begin
+    out1 = 0;
+    out2 = 0;
+  end
+
+  always @(posedge clk) begin
+    out1 = ~out1;
+    out2 = out1;
+  end
+
+endmodule

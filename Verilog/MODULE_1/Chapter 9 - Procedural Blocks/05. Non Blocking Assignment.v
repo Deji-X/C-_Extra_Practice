@@ -21,3 +21,23 @@ Assignment	| Use for	                              | Executes
 
 
 */
+
+
+module shift_register(
+  input clk,
+  input reset,
+  input d,
+  output reg q1,
+  output reg q2
+);
+
+  always @(posedge clk or posedge reset) begin
+    if (reset) begin
+      q1 <= 0;
+      q2 <= 0;
+    end else begin
+      q1 <= d;
+      q2 <= q1;
+    end
+  end
+endmodule

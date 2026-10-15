@@ -52,3 +52,13 @@ end
 
 endmodule
 
+/*
+Output
+
+a b | sum carry
+0 0 |  0    0
+0 1 |  1    0
+1 0 |  1    0
+1 1 |  0    1
+main.v:24: $finish called at 4 (1s)
+*/

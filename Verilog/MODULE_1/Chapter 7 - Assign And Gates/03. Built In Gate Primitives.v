@@ -30,3 +30,15 @@ and(out, a, b);      // Structural (gate primitive)
 assign out = a & b;  // Behavioral (continuous assignment)
 
 */
+
+
+module gate_challenge(
+  input a,
+  input b,
+  output
+);
+
+  and(c, a, b);
+
+
+endmodule

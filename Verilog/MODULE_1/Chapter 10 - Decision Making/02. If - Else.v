@@ -21,3 +21,26 @@ end
 2. Use 'begin/end' when multiple statements are in a block.
 3. 'else' always belongs to the nearest 'if'.
 */
+
+
+module ifelse_challnge;
+  reg a, b, enable;
+  reg out;
+
+  initial begin
+    a = 1;
+    b = 0;
+    enable = 1;
+
+    if (enable) begin
+      out = a & b;
+    end
+    else begin
+      out = a | b;
+    end
+
+    $display ("out = %d (should be 0 because 1&0=0)", out);
+    $finish;
+  end
+
+endmodule

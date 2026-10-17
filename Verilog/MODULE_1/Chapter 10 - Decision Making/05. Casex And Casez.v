@@ -22,3 +22,21 @@ endcase
 The ? means "don't care". That bit can be 0, 1, or anything.
 
 */
+
+module decoder (
+  input [3:0] in,
+  output reg [3:0] out
+);
+
+  always @(*) begin
+    casez (in)
+      4'b???1: out = 4'b0001;
+      4'b??1?: out = 4'b0010;
+      4'b?1??: out = 4'b0100;
+      4'b1???: out = 4'b1000;
+      default: out = 4'b0000;
+  
+    endcase
+  end
+  
+endmodule

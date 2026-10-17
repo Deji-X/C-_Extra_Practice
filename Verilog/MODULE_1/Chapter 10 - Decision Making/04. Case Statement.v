@@ -28,3 +28,21 @@ Key rules:
 3. Use case for one variable vs. many values; use if-else for complex/range conditions
 
 */
+
+module mux4 (
+  input [1:0] select,
+  input in0, in1, in2, in3,
+  output reg result
+);
+
+  always @(*) begin
+    case (select)
+      2'b00 : result = in0;
+      2'b01 : result = in1;
+      2'b10 : result = in2;
+      2'b11 : result = in3;
+      default: result = 0;
+    endcase
+  end
+  
+endmodule

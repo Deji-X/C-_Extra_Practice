@@ -23,3 +23,19 @@ while (data[i] != 1) begin
 end
 
 */
+
+module while_challenge;
+  integer i;
+
+  initial begin
+    i = 0;
+    $display("Printing 0 to 2:");
+
+    while (i < 3) begin
+      $display("i = %d", i);
+      i = i + 1;
+    end
+
+    $finish;
+  end
+endmodule

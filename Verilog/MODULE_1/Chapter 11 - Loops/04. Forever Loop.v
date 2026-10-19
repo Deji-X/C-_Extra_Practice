@@ -29,3 +29,17 @@ KEY RULES:
 2. Use 'disable' to stop, or simulation never end.
 3. Not synthesizable: testbench use only.
 */
+
+module forever_challenge;
+    reg clk;
+
+    initial begin
+        clk = 0;
+
+        forever begin
+            #10 clk = ~clk;
+        end
+
+    end
+
+endmodule

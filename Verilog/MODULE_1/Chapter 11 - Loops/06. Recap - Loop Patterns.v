@@ -4,7 +4,7 @@ module loop_patterns;
   initial begin
     $display("For Loop: ");
     
-    for (i = 0; i < 2; i = i + 1) begin
+    for (i = 0; i < 3; i = i + 1) begin
       $display("i = %d", i);
       end
 

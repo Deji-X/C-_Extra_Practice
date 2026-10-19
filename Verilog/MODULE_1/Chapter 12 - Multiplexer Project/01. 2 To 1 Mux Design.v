@@ -33,7 +33,21 @@ When sel is 1, the output follows in1.
 
 What to do:
 1. Create a module named mux2to1
+2. Add input in0 (1 bit)
+3. Add input in1 (1 bit)
+4. Add input sel (1 bit)
+5. Add output out (1 bit, type reg)
+6. Add an always @(*) block
+7. Inside, add an if-else statement:
+      If sel == 0, set out = in0
+      Else, set out = in1
+8. Close with endmodule
 */
 
-
+module mux2to1(
+  input      in0;
+  input      in1;
+  input      sel;
+  output reg out
+);
 

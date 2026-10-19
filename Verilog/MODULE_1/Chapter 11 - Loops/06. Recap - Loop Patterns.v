@@ -9,6 +9,7 @@ module loop_patterns;
       end
 
     $display("While Loop:");
+    
     i = 0;
     while (i < 3) begin
       $display("i = %d", i);
@@ -16,6 +17,7 @@ module loop_patterns;
     end
 
     $display("Repeat Loop:");
+    
     i = 3;
     repeat (i) begin
       $display("Hello");

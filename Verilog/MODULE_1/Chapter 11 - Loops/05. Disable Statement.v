@@ -26,3 +26,27 @@ initial begin
   disable counter;  // Stops the named block from outside.
 end 
 */
+
+
+module disable_challenge;
+  integer count;
+
+  initial begin
+    count = 0;
+    fork
+      begin : counter
+        forever begin
+          #10 count = count + 1;
+          $display("count = %d", count);
+        end
+      end
+
+      begin
+        #50;
+        disable counter;
+        $display("Counter stopped");
+        $finish;
+      end
+    join
+  end
+endmodule

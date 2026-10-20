@@ -19,3 +19,21 @@ always #5 clk = ~clk;  // Toggle every 5 units.
 Note: Delays are for simulation only, not synthesizable.
 
 */
+
+module delay_challenge;
+
+  initial begin
+    $display("Time %0t: Start", $time);
+    
+    #10
+    $display("Time %0t: After first delay", $time);
+
+    #25
+    $display("Time %0t: After second delay", $time);
+
+    #40
+    $display("Time %0t: End", $time);
+    $finish;
+  end
+
+endmodule

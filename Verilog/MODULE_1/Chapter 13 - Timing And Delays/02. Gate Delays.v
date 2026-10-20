@@ -17,3 +17,23 @@ Key Points:
 3. Gate delays are for simulation only, not synthesizable.
 
 */
+
+module gate_delay_challenge;
+  reg a, b;
+  wire and_out, or_out, not_out;
+
+  and  #5 (and_out, a, b);
+
+  or   #3 (or_out, a, b);
+
+  not  #2 (not_out, a);
+
+  initial begin
+    $monitor("Time %0t: a=%b, b=%b  |  and=%b, or=%b, not=%b",
+             $time, a, b, and_out, or_out, not_out);
+
+    a = 1; b = 1;
+    #10 $finish;
+  end
+
+endmodule

@@ -25,13 +25,13 @@ module delay_challenge;
   initial begin
     $display("Time %0t: Start", $time);
     
-    #10
+    #10;
     $display("Time %0t: After first delay", $time);
 
-    #25
+    #15;
     $display("Time %0t: After second delay", $time);
 
-    #40
+    #15;
     $display("Time %0t: End", $time);
     $finish;
   end

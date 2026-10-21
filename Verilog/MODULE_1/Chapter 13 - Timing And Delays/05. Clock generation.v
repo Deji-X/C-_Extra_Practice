@@ -31,9 +31,13 @@ module clock_challenge;
   
   // TODO: Step 1 - Add initial block to set clk = 0
   
+  initial begin
+    clk = 0;
+  end
+    
   
   // TODO: Step 2 - Add always block to toggle clk every 4 time units
-  
+    always #4 clk = ~clk;
 
   initial begin
     $monitor("Time %0t: clk = %b", $time, clk);

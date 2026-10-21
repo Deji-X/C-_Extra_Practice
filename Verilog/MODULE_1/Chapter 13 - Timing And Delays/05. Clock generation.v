@@ -1,5 +1,4 @@
 /*    CLOCK GENERATION
-ooooo
 A clock toggles between 0 and 1 at regular intervals. Period = 2 × delay.
 
 Method 1: Always block (most common)

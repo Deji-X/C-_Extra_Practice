@@ -25,3 +25,35 @@ endmodule
 2. Use 'wire' for signals driven coming from the DUT (outputs).
 3. '$finish' ends the simulation.
 */
+
+module and_gate (
+  input a, b;
+  output c
+);
+
+  assign c = a & b;
+
+endmodule
+
+`timescale 1ns / 1ns;
+
+module testbench;
+
+  reg a, b;
+  wire c;
+
+  and_gate dut (
+    .a(a),
+    .b(b),
+    .c(c)
+  );
+
+  initial begin
+    a = 0; b = 0; #10; $display ("%d & %d = %d", a, b, c);
+    a = 0; b = 1; #10; $display ("%d & %d = %d", a, b, c);
+    a = 1; b = 0; #10; $display ("%d & %d = %d", a, b, c);
+    a = 1; b = 1; #10; $display ("%d & %d = %d", a, b, c);
+    $finish;
+  end
+
+endmodule

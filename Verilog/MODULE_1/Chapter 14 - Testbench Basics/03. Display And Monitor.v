@@ -50,6 +50,23 @@ module testbench;
 
   initial begin
     $display("Testing OR Gate");
+
+    // TODO: Add $monitor to track time, x, y, z
+    // Format: "Time %0t: x=%b, y=%b, z=%b"
+    $monitor ("Time %0t: x=%b, y=%b, z=%b", $time, x, y, z);
+    
+    
+    // Apply stimulus
+    x = 0; y = 0; #10; 
+    x = 0; y = 1; #10;
+    x = 1; y = 0; #10;
+    x = 1; y = 1; #10;
+    
+    // TODO: Add $display "Test complete"
+    $display("Test complete");
+    
+    
+    $finish;
     
   end
 

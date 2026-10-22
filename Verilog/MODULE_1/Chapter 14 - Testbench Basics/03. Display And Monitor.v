@@ -26,3 +26,12 @@ KEY RULES:
 1. Only one $monitor is active at a time: the last one overrides previous ones.
 2. Use $finish to tstop the simulation.
 */
+
+module or_gate (
+  input x,
+  input y,
+  output z
+);
+
+  assign z = x | y;
+endmodule

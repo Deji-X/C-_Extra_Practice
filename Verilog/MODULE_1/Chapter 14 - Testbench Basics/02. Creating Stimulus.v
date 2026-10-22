@@ -68,7 +68,7 @@ module testbench;
     x = 0; y = 1; #10; $display("%d %d | %d", x, y, z);
     x = 1; y = 0; #10; $display("%d %d | %d", x, y, z);
     x = 1; y = 1; #10; $display("%d %d | %d", x, y, z);
-    /*  For */
+    /* For */
     $finish;
   end
 

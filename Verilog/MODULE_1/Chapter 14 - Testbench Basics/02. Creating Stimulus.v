@@ -61,7 +61,9 @@ module testbench;
   );
 
   initial begin
-    
+    $display("x y | z");
+    $display("---------");
+
     
   end
 

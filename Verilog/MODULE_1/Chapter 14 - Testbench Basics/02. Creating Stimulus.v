@@ -53,3 +53,16 @@ module testbench;
 
   reg x, y;
   wire z;
+
+  or_gate dut(
+    .x(x);
+    .y(y);
+    .z(z)
+  );
+
+  initial begin
+    
+    
+  end
+
+  

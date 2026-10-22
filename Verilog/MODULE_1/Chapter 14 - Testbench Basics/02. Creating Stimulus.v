@@ -68,7 +68,14 @@ module testbench;
     x = 0; y = 1; #10; $display("%d %d | %d", x, y, z);
     x = 1; y = 0; #10; $display("%d %d | %d", x, y, z);
     x = 1; y = 1; #10; $display("%d %d | %d", x, y, z);
-    /* For */
+    /* For loop 
+    integer i;
+    initial begin
+      for (i = 0; i < 4; i = i + 1) begin
+        {a, b} = i; #10;
+      end
+      $finish;
+    end*/
     $finish;
   end
 

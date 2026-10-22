@@ -38,3 +38,19 @@ endmodule
 
 
 module testbench;
+
+  reg x, y;
+  wire z;
+
+  or_gate dut (
+    .x(x),
+    .y(y),
+    .z(z)
+  );
+
+  initial begin
+    $display("Testing OR Gate");
+    
+  end
+
+endmodule

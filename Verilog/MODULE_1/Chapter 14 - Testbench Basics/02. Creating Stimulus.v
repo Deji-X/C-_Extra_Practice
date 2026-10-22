@@ -48,3 +48,8 @@ module or_gate(
   assign z = x | y;
 
 endmodule
+
+module testbench;
+
+  reg x, y;
+  wire z;

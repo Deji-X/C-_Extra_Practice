@@ -32,6 +32,9 @@ module or_gate (
   input y,
   output z
 );
-
   assign z = x | y;
 endmodule
+
+
+
+module testbench;

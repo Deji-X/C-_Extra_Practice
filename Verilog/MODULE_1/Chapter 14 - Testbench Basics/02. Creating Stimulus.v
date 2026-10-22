@@ -40,3 +40,11 @@ KEY RULES
 3. End simualtion with '$finish;'
 */
 
+module or_gate(
+  input x, y;
+  output z
+);
+
+  assign z = x | y;
+
+endmodule

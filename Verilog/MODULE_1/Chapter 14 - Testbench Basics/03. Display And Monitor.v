@@ -10,7 +10,7 @@ Example:
 
 initial begin
   $display("Simulation started");
-  $monitor("Time %0t: a=%b, b=&b", $time, a, b);
+  $monitor("Time %0t: a=%b, b=%b", $time, a, b);
   #10 a = 1;
   #10 b = 1;
 end

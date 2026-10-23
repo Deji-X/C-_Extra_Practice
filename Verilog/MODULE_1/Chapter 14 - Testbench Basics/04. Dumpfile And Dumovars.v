@@ -43,4 +43,12 @@ module testbench;
 
   $display("Simulation running...");
 
-  a
+  a = 0; b = 0; #10;
+  a = 0; b = 1; #10;
+  a = 1; b = 0; #10;
+  a = 1; b = 1; #10;
+
+  $display("Simulation complete. Open waveform.vcd");
+  $finish;
+  end
+endmodule

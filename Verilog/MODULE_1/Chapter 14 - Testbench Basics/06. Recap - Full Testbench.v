@@ -16,4 +16,7 @@ Uses $monitor to track time, x, y, and z
 Tests all four input combinations (00, 01, 10, 11) with #10 delay between each
 Prints "Test complete" at the end
 Ends the simulation with $finish
-  */
+*/
+
+
+

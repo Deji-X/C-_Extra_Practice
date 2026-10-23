@@ -8,8 +8,8 @@ The traffic light has three outputs:
 
 Light	    |Output	    |Meaning
 ------------------------------
-Red	      |red = 1	  |Stop
-Yellow	  |yellow = 1	|Caution
+Red	        |red = 1	|Stop
+Yellow	    |yellow = 1	|Caution
 Green	    |green = 1	|Go
 
 

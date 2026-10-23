@@ -18,7 +18,7 @@ Green → Yellow → Red → Green → …
 
 
 Timing Sequence
-State	  |Duration	  |Next State
+State	  |Duration	    |Next State
 ---------------------------------
 Green	  |30 seconds	|Yellow
 Yellow	  |10 seconds	|Red
@@ -28,9 +28,9 @@ In this lesson, you will define the states for the traffic light controller.
 
 A traffic light has three possible states:
 
-State	  |Light	          |Code
+State	 |Light	           |Code
 ---------------------------------
-Green	  |Green light ON	  |2'b00
+Green	|Green light ON	    |2'b00
 Yellow	|Yellow light ON	|2'b01
 Red	    |Red light ON	    |2'b10
 

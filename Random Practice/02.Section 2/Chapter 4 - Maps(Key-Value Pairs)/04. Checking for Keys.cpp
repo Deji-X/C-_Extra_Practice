@@ -15,10 +15,8 @@ if (scores.count("Alice")) {
 This prevents accidentally creating unwanted entries when checking for key existence,
 unlike using the square bracket operator []
 which automatically creates keys with default values.
-
 */
-
-/*        CHECKING FOR KEYS
+/*       CHECKING FOR KEYS
 Create a program that manages a library book checkout system using a std::map.
 Your program will track which books are available and use the .count() method to
 safely check if books existbefore attempting to access their information.
@@ -47,5 +45,46 @@ If the book doesn't exist: Book "[book title]" is not available in the library
 Use the .count() method in an if-statement to check for the book's existence before accessing its value.
 If library.count(bookTitle) returns 1, the book exists and you can safely access library[bookTitle] to get the number of copies.
 If it returns 0, the book doesn't exist in the library.
-
 */
+
+
+#include <iostream>
+#include <map>
+#include <string>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    map<string, int> library;
+
+    for (int i = 0; i < n; i++) {
+        string title;
+        int copies;
+        cin >> title >> copies;
+        library[title] = copies;
+    }
+
+    int m;
+    cin >> m;
+
+    // Process each book request
+    for (int i = 0; i < m; i++) {
+        string bookTitle;
+        cin >> bookTitle;
+
+        if (library.count(bookTitle)) {
+            cout << "Book \"" << bookTitle
+                 << "\" is available with "
+                 << library[bookTitle] << " copies"
+                 << endl;
+        } else {
+            cout << "Book \"" << bookTitle
+                 << "\" is not available in the library"
+                 << endl;
+        }
+    }
+
+    return 0;
+}

@@ -18,5 +18,42 @@ Prints "Test complete" at the end
 Ends the simulation with $finish
 */
 
+module xor_gate(
+  input x, y,
+  output z
+);
 
+  assign z = x ^ y;
 
+endmodule
+
+module testbench;
+  reg x, y;
+  wire z;
+
+  xor_gate dut (
+    .x(x),
+    .y(y),
+    .z(z)
+  );
+
+  initial begin
+    $dumpfile("xor_waveform.vcd");
+    $dumpvars(0, testbench);
+
+  
+    $display("Testing XOR Gate");
+    $monitor("Time %0t: x=%b, y=%b, z=%b", $time, x, y, z);
+
+    x = 0; y = 0; #10;
+    x = 0; y = 1; #10;
+    x = 1; y = 0; #10;
+    x = 1; y = 1; #10;
+
+    $display("Test complete");
+
+    $finish;
+  end
+
+endmodule
+  

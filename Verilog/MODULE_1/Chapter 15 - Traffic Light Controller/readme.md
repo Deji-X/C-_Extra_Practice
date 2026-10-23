@@ -21,8 +21,8 @@ Timing Sequence
 State	  |Duration	  |Next State
 ---------------------------------
 Green	  |30 seconds	|Yellow
-Yellow	|10 seconds	|Red
-Red	    |40 seconds	|Green
+Yellow	  |10 seconds	|Red
+Red	      |40 seconds	|Green
 
 In this lesson, you will define the states for the traffic light controller.
 

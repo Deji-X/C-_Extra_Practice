@@ -8,9 +8,9 @@ The traffic light has three outputs:
 
 Light	    |Output	    |Meaning
 ------------------------------
-Red	        |red = 1	|Stop
-Yellow	    |yellow = 1	|Caution
-Green	    |green = 1	|Go
+1.Red	    |red = 1	|Stop
+2.Yellow    |yellow = 1	|Caution
+3.Green	    |green = 1	|Go
 
 
 The lights cycle in this order:
@@ -20,19 +20,19 @@ Green → Yellow → Red → Green → …
 Timing Sequence
 State	  |Duration	    |Next State
 ---------------------------------
-Green	  |30 seconds	|Yellow
-Yellow	  |10 seconds	|Red
-Red	      |40 seconds	|Green
+1.Green	  |30 seconds	|Yellow
+2.Yellow  |10 seconds	|Red
+3.Red	  |40 seconds	|Green
 
 In this lesson, you will define the states for the traffic light controller.
 
 A traffic light has three possible states:
 
-State	 |Light	           |Code
+State	    |Light	            |Code
 ---------------------------------
-Green	|Green light ON	    |2'b00
-Yellow	|Yellow light ON	|2'b01
-Red	    |Red light ON	    |2'b10
+1.Green	    |Green light ON	    |2'b00
+2.Yellow	|Yellow light ON	|2'b01
+3.Red	    |Red light ON	    |2'b10
 
 Complete the module by adding the missing parts.
 
